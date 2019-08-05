@@ -8,6 +8,25 @@
 	<!-- load bootstrap and our own personal stylesheet -->
 	<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/superhero/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<title>jQuery Setting background-image CSS Property</title>
+<style type="text/css">
+    .box{
+        width: 500px;
+        height: 300px;
+        border: 5px solid #333;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(){
+    // Set background image of a div on click of the button
+    $("button").click(function(){
+        var imageUrl = "adven.jpg";
+        $(".box").css("background-image", "url(" + imageUrl + ")");
+    });    
+});
+</script>
+
 
 </head>
 <body>
