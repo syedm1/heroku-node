@@ -1,4 +1,4 @@
-heroku-node
+Exon
 ===========
 
-Code for the tutorial by @sevilayha: Deploying Node Apps to Heroku
+Code for Exon
