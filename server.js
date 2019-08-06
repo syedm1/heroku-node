@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+app.use(express.static("./views/"));
 
 // set the port of our application
 // process.env.PORT lets the port be set by Heroku
