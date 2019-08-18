@@ -158,6 +158,12 @@
           hideHeaders: true,
           hideFooter: true
         });
+		
+		timer = setInterval(function() { 
+		if(popup2.closed) {
+			clearInterval(timer);
+			window.location.href = mvp_link
+		} }, 500);
       
        
       })
