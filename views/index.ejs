@@ -62,6 +62,40 @@
           .my-button:focus {
             outline: 0;
           }
+	      .wrapper {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-gap: 0;
+    }
+
+    .box {
+        border: 1px solid;
+    }
+
+    .box+.box {
+        border-left: 0;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .image {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center
+    }
+
+    img {
+        border: 1px solid;
+    }
   </style>
 </head>
 
