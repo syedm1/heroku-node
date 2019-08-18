@@ -160,11 +160,17 @@
           hideFooter: true
         });
 		
-		timer = setInterval(function() { 
-		if(popup2.closed) {
-			clearInterval(timer);
-			window.location.href = mvp_link
-		} }, 500);
+		popup2.onunload = function() {
+		  if (window.opener && typeof(window.opener.onPopupClosed) == 'function') {
+			window.opener.onPopupClosed();
+		  }
+		};
+
+		window.onPopupClosed = function() {
+		  alert("You closed the pop up!");
+		  //window.location.href = mvp_link
+		};
+		
       
        
       })
