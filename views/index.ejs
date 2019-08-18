@@ -157,14 +157,12 @@
         popup2 = window.typeformEmbed.makePopup(typeform_address, {
           hideHeaders: true,
           hideFooter: true
-		  
-		var popupTick = setInterval(function() {
-		if (popup2.closed) {
-        clearInterval(popupTick);
-        console.log('window closed!');
-					}
-			}, 500);
-		});
+		var mvp_link="https://4iu12i.axshare.com/"  
+		var timer = setInterval(function() { 
+		if(popup2.closed) {
+			clearInterval(timer);
+			window.location.href = mvp_link
+		} }, 500);
 	
 }
       
@@ -178,13 +176,7 @@
       document.getElementById('bt-popup').addEventListener('click', function () {
         popup2.open();
       });
-    var timer = setInterval(function() { 
-    if(popup2.closed) {
-        clearInterval(timer);
-	var mvp_link="https://4iu12i.axshare.com/"
-        window.location.href = mvp_link
-    }
-}, 1000);
+   
       
   </script>
 	      
