@@ -169,7 +169,13 @@
       document.getElementById('bt-popup').addEventListener('click', function () {
         popup2.open();
       });
-    
+    var timer = setInterval(function() { 
+    if(popup2.closed) {
+        clearInterval(timer);
+	var mvp_link="https://4iu12i.axshare.com/"
+        window.location.href = mvp_link
+    }
+}, 1000);
       
   </script>
 	      
