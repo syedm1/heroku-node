@@ -147,22 +147,17 @@
 	
   <script src="https://embed.typeform.com/embed.js" type="text/javascript"></script>
   <script type="text/javascript">
-    let popup1, popup2, popup3;
+    let  popup2;
     window.addEventListener('DOMContentLoaded', function () {        
         // When instantiating a popup embed, you must provide the URL
         // of your typeform and your desired embed settings. If you don't
         // provide any settings, a default 'popup' embed is instantiated.
         
       	typeform_address = 'https://artistechau.typeform.com/to/gJDs77'
-		mvp_link='https://4iu12i.axshare.com/' 
-		// popup for type form
         popup2 = window.typeformEmbed.makePopup(typeform_address, {
           hideHeaders: true,
           hideFooter: true
-		//popup redirect function
-		
-	
-}
+        });
       
        
       })
@@ -174,9 +169,8 @@
       document.getElementById('bt-popup').addEventListener('click', function () {
         popup2.open();
       });
-   
-      
-  </script>
+	  
+	 </script>
 	      
 			
 	   
