@@ -158,12 +158,12 @@
           hideHeaders: true,
           hideFooter: true
         });
-		function someFunctionToCallWhenPopUpCloses() {
-		window.setTimeout(function() {
-		if (popup2.closed) {
-		    alert("Pop-up definitely closed");
-		}
-	    }, 1);
+	var popupTick = setInterval(function() {
+      if (popup2.closed) {
+        clearInterval(popupTick);
+        console.log('window closed!');
+      }
+    }, 500);
 }
       
        
