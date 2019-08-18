@@ -157,13 +157,15 @@
         popup2 = window.typeformEmbed.makePopup(typeform_address, {
           hideHeaders: true,
           hideFooter: true
-        });
-	var popupTick = setInterval(function() {
-      if (popup2.closed) {
+		  
+		var popupTick = setInterval(function() {
+		if (popup2.closed) {
         clearInterval(popupTick);
         console.log('window closed!');
-      }
-    }, 500);
+					}
+			}, 500);
+		});
+	
 }
       
        
